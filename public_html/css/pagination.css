@@ -1,0 +1,44 @@
+table.myTab thead tr .header {
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+table.myTab tbody td {
+	padding: 4px;
+	vertical-align: center;
+}
+table.myTab tbody tr.odd td {
+	background-color:#4cb6df;
+}
+table.myTab thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+table.myTab thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}
+table.myTab thead tr .headerSortDown, table.myTab thead tr .headerSortUp {
+background-color: #3d94b6;
+}
+
+.pagedisplay {
+	background-color: transparent;
+	color: black;
+	border: 0px;
+	cursor: default;
+	text-align: center;
+	float: left;
+}
+
+#pager_left {	float: left;  }
+
+#pager_right {
+	float: left;
+	padding-right: 20px;
+}
+
+#pager {
+	padding-right: 10px;
+}

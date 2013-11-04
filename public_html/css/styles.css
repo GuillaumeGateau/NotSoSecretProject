@@ -1,0 +1,409 @@
+/* 
+    Document   : styles
+    Created on : 8 mai 2011, 13:02:17
+    Author     : Damien
+    Description:
+        Style the KPI.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    width: 1200px;
+    background-color: white;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+#banner {
+    height: 124px;
+    width: 1200px;
+    background-image: url(../img/banner_v2.png);
+    /* background-color: #4cb6df; */
+    /* background-image: url(../img/banner.png); */
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom:7px;
+}
+
+#banner h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;   
+    text-indent: -990em;
+}
+
+.txtfld4 {
+	width: 24%;
+	margin-bottom: 4px;
+}
+
+.txtfld5 {
+	width: 18.3%;
+}
+
+#menu {
+   width: 1200px;
+   height: 40px;
+   background-image: url(../img/menubar.png);
+}
+
+#menu ul {
+    display: inline;    
+}
+
+#menu li {
+    float: left;
+    list-style-type: none; 
+    padding: 0.5em 1.5em;
+    border-right: 2px solid white;
+    height: 25px;
+    font-size: 13.5px;
+    
+}
+
+#menu a, a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#menu a:hover, a:active {
+	color: #4cb6df;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+#draw_graph {
+	color: #4cb6df;
+}
+
+.myTab {
+    width: 1150px;
+    padding: 0px;
+	margin-top: -30px;
+    border: 0;
+    margin: 15px auto;
+    border-collapse: collapse;
+    color: #000;
+}
+
+.myTab th {
+    margin: 0;
+    padding: 6px 6px 6px 12px;
+    text-align: center;
+    border: solid 1px #bbb;
+    font-size: 75%;
+    color: #fff;
+}
+
+.myTab tr {
+    margin: 0;
+    padding: 6px 6px 6px 12px;
+    text-align: right;
+}
+
+.myTab#pricingTab tr {
+    margin: 0;
+    padding: 6px 6px 6px 12px;
+    text-align: center;
+    width: 50%;
+}
+
+.myTab#pricingTab2 tr {
+    margin: 0;
+    padding: 6px 6px 6px 12px;
+    text-align: center;
+    width: 50%;
+}
+
+.myTab#RTTab2 tr {
+    margin: 0;
+    padding: 6px 6px 6px 12px;
+    text-align: center;
+    width: 50%;
+}
+
+.myTab#RTTab2 td {
+    width: 40%;
+}
+
+.myTab#pricingTab {
+    width: 80%;
+}
+
+.myTab#pricingTab2 {
+    width: 50%;
+}
+
+.myTab td {
+    margin: 0;
+    padding: 0.2em 0.5em;
+    border: solid 1px #bbb;
+    background-color: #fff;
+}
+
+.notes {
+    text-align: center;
+}
+
+.note_img {
+	display: inline-block;
+	float: left;
+	text-align: left;
+	margin-top: 1px;
+}
+
+.note_add {
+	display: inline-block;
+	text-align: center;
+	margin-top: 1px;
+	padding-right: 5px;
+}
+
+.myTab tr td:first-child {
+    width: 8.9em;
+}
+
+/*.myTab#RTTab2 tr td:first-child {
+	width: 16em;
+}*/
+
+.myTab#pricingTab tr td:first-child {
+    width: 12em;
+}
+
+.myTab#pricingTab2 tr td:first-child {
+    width: 14em;
+}
+
+.myTab#DistributionTab tr td:first-child {
+    width: 0em;
+}
+
+.myTab#experimentTab tr td:first-child {
+    width: 8em;
+}
+
+.myTab#DistributionTab tr td{
+    height: 30em;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ebf2f3;
+}
+
+#ChargebackTab {
+	font-size: 12px;
+}
+
+#ChargebackTab th {
+	font-size: 100%;
+}
+
+.experimentTab {
+    background-color: #4cb6df;
+}
+
+.countryTab {
+    background-color: #4cb6df;
+}
+
+.pricingTab {
+    background-color: #4cb6df;
+}
+
+.sourcesTab {
+    background-color: #4cb6df;
+}
+
+.sourcesTab tr td {
+    text-align: center;
+}
+
+.sourcesTab tr td:first-child  {
+    text-align: right;
+}
+
+.markTab {
+    background-color: #4cb6df;
+}
+
+.payTab {
+    background-color: #4cb6df;
+}
+
+.prodTab {
+    background-color: #4cb6df;
+}
+
+.RTTab {
+    background-color: #4cb6df;
+}
+
+#RTSum tr td {
+    width: 10%;
+    text-align: center;
+}
+
+#RTPSP tr td {
+    width: 16%;
+    text-align: center;
+}
+
+#RTSources tr td {
+    text-align: center;
+}
+
+#RTSources tr td:first-child  {
+    text-align: right;
+}
+
+#markPerAge  {
+    width: 50%;
+    margin: 0;
+}
+
+#markPerAge tr td {
+    width: 10%;
+}
+
+.myButton {
+    float: right;
+}
+
+.fchargeback {
+	margin-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+h3 {
+	text-align: center;
+	color: #2a2b71;
+	font-size: 20px;
+}
+
+h4 {
+	text-align: center;
+}
+
+
+.separator {
+	margin-top: -10px;
+}
+
+.box {
+    width: 1200px;
+    margin: 15px 0;
+    border: 0;
+    padding: 0px;
+}
+
+.box .content {
+    padding: 10px 20px 0;
+    margin: 0;
+    border: 0;
+    color: #666;
+}
+
+.box .bot {
+    width: 1200px;
+    height: 31px;
+}
+
+.yellow-box {
+    background: #bee4f3 url(../img/rounded-blue-top.png) top left no-repeat;
+}
+
+.yellow-box .bot {
+    background: url(../img/rounded-blue-bot.png) bottom left no-repeat;
+}
+
+
+.red-box {   
+    background: #bee4f3 url(../img/rounded-blue-top.png) top left no-repeat;
+}
+
+.red-box .bot {
+    background: #bee4f3 url(../img/rounded-blue-bot.png) bottom left no-repeat;
+}
+
+.blue-box {
+    background: #bee4f3 url(../img/rounded-blue-top.png) top left no-repeat;
+}
+
+.blue-box .bot {
+    background: url(../img/rounded-blue-bot.png) bottom left no-repeat;
+}
+
+.green-box {
+    background: #bee4f3 url(../img/rounded-blue-top.png) top left no-repeat;
+}
+
+.green-box .bot {
+    background: url(../img/rounded-blue-bot.png) bottom left no-repeat;
+}
+
+.grey-box {
+    background: #bee4f3 url(../img/rounded-blue-top.png) top left no-repeat;
+}
+
+.grey-box .bot {
+    background: url(../img/rounded-blue-bot.png) bottom left no-repeat;
+}
+
+
+
+#loginBox label {
+	display: block;  /* block float the labels to left column, set a width */
+	float: left;
+	width: 80px;
+	padding: 0;
+	margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: left;
+}
+
+#loginBox {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% arial,verdana,verdana,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  max-width: 600px;
+  width: 560px;
+}
+
+#loginBox br {
+    clear: left;
+}
+
+.loading {
+    background: url(../img/ajax-loader.gif) no-repeat;
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+}
+
+td.green { 	color: green; }
+td.green_bold { 	color: green; font-weight: bold; }
+td.red { color: red; }
+td.red_bold { color: red; font-weight: bold; }
+td.grey { color: gray; }
+
+input#nDate {
+	margin-top: -8px;
+	margin-bottom: 0px;
+	background-color: transparent;
+	color: black;
+	border: 0px;
+	cursor: default;
+	font-size: 13px;
+}

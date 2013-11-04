@@ -1,0 +1,29 @@
+# Turn on URL rewriting engine
+
+RewriteEngine On
+
+# Disable rewriting for existing files or directories
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule .* /index.php [L,QSA]
+
+
+# Redirect HTTPS requests for non-SSL pages back to HTTP. (Note that shared objects
+# such as images on both HTTP and HTTPS pages are excluded from this rule)
+RewriteCond %{SERVER_PORT} =443
+RewriteCond $1 !^(Login|LoginCheck)
+RewriteCond $1 !\.(gif|jpe?g|png|ico|css|js)$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+#
+# Redirect HTTP requests for SSL checkout page to HTTPS
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(Login|LoginCheck)$ https://%{HTTP_HOST}/$1 [R=301,L]
+#
+# Redirect extensionless page requests to remove trailing slash
+RewriteRule ^([^/.]+/[^/.]+)/$ http://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^((Login|LoginCheck))/$ https://%{HTTP_HOST}/$1 [R=301,L]
